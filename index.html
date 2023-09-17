@@ -13,8 +13,12 @@
   background-color: #333333;
 }
 
-li {
-  float: left;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.fill{
+  display: flex;
 }
 
 li a {
@@ -32,14 +36,21 @@ li a:hover {
     </style>
 </head>
 <body style="background-color: aqua;">
-    <ul>
-        <li style="font-size: 2rem;">&#127969;</li>
-        <li style="color: aqua;font-size:3rem ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">RAEN HOMES</li>
+  
+    <ul >
+      <div class="flex-container">
+      <div >
+        <li style="color: aqua;font-size:2.5rem ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+           <span style="font-size: 2.3rem;">&#127969</span> RAEN HOMES</li>
+      </div>
+        <div class="fill">
         <li><a href="#home">Home</a></li>
         <li><a href="#contact">Contact us</a></li>
         <li><a href="#about" title="click to know more about us">About us</a></li>
         <li><a href="inform.html" title="Click to go to login page">Log in</a></li>
         <li><a href="#pageend" title="Click to go to bottom of page">Page end</a></li>
+      </div>
+    </div>
       </ul>
 
       <h1 id="home" style="color: rgba(243, 188, 9, 0.47); font-size: 10rem;text-align: center;">RAEN HOMES</h1>
